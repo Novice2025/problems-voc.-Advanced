@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Vocabulary: Problems & Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom colors for the theme */
+        :root {
+            --primary-blue: #1e40af; /* Darker blue for main headings */
+            --secondary-blue: #2563eb; /* Medium blue for sub-headings */
+            --accent-green: #047857; /* Green for terms */
+            --portuguese-orange: #ea580c; /* Orange for Portuguese text */
+            --light-gray-bg: #f9fafb; /* Light background */
+            --dark-text: #1f2937; /* Dark text */
+            --light-text: #4b5563; /* Lighter text */
+            --tip-yellow: #f59e0b; /* Yellow for usage tips */
+            --special-box-bg: #fef3c7; /* Light yellow for special box */
+            --special-box-border: #f59e0b; /* Yellow border for special box */
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: var(--light-gray-bg);
+            color: var(--dark-text);
+        }
+
+        h1 {
+            color: var(--primary-blue);
+        }
+
+        h2 {
+            color: var(--secondary-blue);
+        }
+
+        .term-title {
+            color: var(--accent-green);
+        }
+
+        .portuguese-text {
+            color: var(--portuguese-orange);
+            font-style: italic;
+        }
+
+        .usage-tip-icon {
+            color: var(--tip-yellow);
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .collapsible-content.active {
+            max-height: 1000px; /* Large enough to accommodate content */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .feedback-box {
+            display: none;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+
+        .feedback-box.correct {
+            background-color: #d1fae5; /* Green-100 */
+            color: #065f46; /* Green-800 */
+            display: block;
+        }
+
+        .feedback-box.incorrect {
+            background-color: #fee2e2; /* Red-100 */
+            color: #991b1b; /* Red-800 */
+            display: block;
+        }
+
+        .pronunciation-icon {
+            cursor: pointer;
+            margin-left: 0.5rem;
+            color: var(--secondary-blue);
+        }
+
+        .toc-link {
+            display: block;
+            padding: 0.25rem 0;
+            color: var(--dark-text);
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .toc-link:hover {
+            color: var(--primary-blue);
+            text-decoration: underline;
+        }
+
+        .toc-section-title {
+            color: var(--secondary-blue);
+            font-weight: bold;
+            margin-top: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-6 md:p-10">
+        <h1 class="text-3xl md:text-4xl font-extrabold mb-4 text-center">Professional Vocabulary for Work: Problems & Solutions 💼</h1>
+        <p class="text-lg text-light-text mb-8 text-center">
+            Welcome to this comprehensive learning module designed to elevate your professional communication skills in English, specifically when discussing problems, challenges, and their strategic solutions in a work environment.
+        </p>
+        <p class="text-md text-light-text mb-10 text-center">
+            This material is structured to provide a clear progression, from foundational terms to highly applicable vocabulary, complete with real-world applications, precise definitions, and Portuguese equivalents. Each term is presented in a dedicated, easy-to-digest format to maximize your learning and retention.
+        </p>
+        <p class="text-sm text-gray-500 mb-12 text-center">
+            Created by Daby @2025
+        </p>
+
+        <!-- Table of Contents Section -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2" id="table-of-contents">Table of Contents 📋</h2>
+        <div class="mb-12 p-4 bg-blue-50 rounded-lg shadow-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                <div>
+                    <h3 class="toc-section-title">Expressions & Nouns</h3>
+                    <a href="#blindspot-term" class="toc-link">Blindspot</a>
+                    <a href="#botched-term" class="toc-link">Botched</a>
+                    <a href="#bumpy-term" class="toc-link">Bumpy</a>
+                    <a href="#delay-term" class="toc-link">Delay</a>
+                    <a href="#downtime-term" class="toc-link">Downtime</a>
+                    <a href="#frustrations-term" class="toc-link">Frustrations</a>
+                    <a href="#hurdle-term" class="toc-link">Hurdle</a>
+                    <a href="#loophole-term" class="toc-link">Loophole</a>
+                    <a href="#loose-ends-term" class="toc-link">Loose Ends</a>
+                    <a href="#pain-in-the-neck-ass-term" class="toc-link">Pain in the Neck / Ass</a>
+                    <a href="#pain-point-term" class="toc-link">Pain Point</a>
+                    <a href="#rough-patch-term" class="toc-link">Rough Patch</a>
+                    <a href="#silver-bullet-term" class="toc-link">Silver Bullet</a>
+                    <a href="#tip-of-the-iceberg-term" class="toc-link">Tip of the Iceberg</a>
+                    <a href="#tipping-point-term" class="toc-link">Tipping Point</a>
+                    <a href="#underlying-problem-term" class="toc-link">Underlying Problem</a>
+                    <a href="#dire-situation-term" class="toc-link">Dire Situation</a>
+                    <a href="#elephant-in-the-room-term" class="toc-link">Elephant in the Room</a>
+                    <a href="#roadblock-term" class="toc-link">Roadblock</a>
+                    <a href="#sticky-term" class="toc-link">Sticky</a>
+                    <a href="#paradigm-shift-term" class="toc-link">Paradigm Shift</a>
+                    <a href="#pressing-issues-term" class="toc-link">Pressing Issues</a>
+                    <a href="#on-the-line-term" class="toc-link">On the Line</a>
+                    <a href="#synonyms-table" class="toc-link">Synonyms for Problem Table</a>
+                </div>
+                <div>
+                    <h3 class="toc-section-title">Verbs & Phrasal Verbs</h3>
+                    <a href="#call-into-question-term" class="toc-link">Call into Question</a>
+                    <a href="#cause-problems-term" class="toc-link">Cause Problems</a>
+                    <a href="#hinder-term" class="toc-link">Hinder</a>
+                    <a href="#jeopardize-term" class="toc-link">Jeopardize</a>
+                    <a href="#move-the-goalpost-term" class="toc-link">Move the Goalpost</a>
+                    <a href="#pose-problem-term" class="toc-link">Pose (a problem/threat)</a>
+                    <a href="#cope-with-term" class="toc-link">Cope with</a>
+                    <a href="#tackle-term" class="toc-link">Tackle (a problem)</a>
+                    <a href="#running-behind-term" class="toc-link">Running Behind</a>
+                    <a href="#lag-behind-term" class="toc-link">Lag Behind</a>
+                    <a href="#press-for-time-term" class="toc-link">Press for Time</a>
+                    <a href="#play-down-term" class="toc-link">Play Down</a>
+                    <a href="#undermining-term" class="toc-link">Undermining</a>
+                    <a href="#diminish-term" class="toc-link">Diminish (an issue)</a>
+                    <a href="#foresee-problem-term" class="toc-link">Foresee (a problem)</a>
+                    <a href="#where-the-problem-lies-term" class="toc-link">Where the Problem Lies</a>
+                    <h3 class="toc-section-title mt-4">Informal & Direct Expressions</h3>
+                    <a href="#big-deal-term" class="toc-link">Big Deal</a>
+                    <a href="#dont-blame-you-term" class="toc-link">Don't Blame You</a>
+                    <a href="#dont-sweat-it-term" class="toc-link">Don't Sweat It</a>
+                    <a href="#got-caught-without-an-umbrella-term" class="toc-link">Got Caught Without an Umbrella</a>
+                    <a href="#tell-me-about-it-term" class="toc-link">Tell Me About It</a>
+                    <a href="#sick-and-tired-term" class="toc-link">Sick and Tired</a>
+                    <a href="#picky-term" class="toc-link">Picky</a>
+                    <a href="#reckless-term" class="toc-link">Reckless</a>
+                    <h3 class="toc-section-title mt-4">Positive Outcomes & Achievements</h3>
+                    <a href="#kudos-term" class="toc-link">Kudos</a>
+                    <h3 class="toc-section-title mt-4">Common Collocations</h3>
+                    <a href="#address-problem-collocation" class="toc-link">Address a Problem/Issue</a>
+                    <a href="#face-challenge-collocation" class="toc-link">Face a Challenge</a>
+                    <a href="#find-solution-collocation" class="toc-link">Find a Solution</a>
+                    <a href="#root-cause-collocation" class="toc-link">Root Cause</a>
+                    <a href="#critical-issue-collocation" class="toc-link">Critical Issue</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Understanding the Language of Problems Section -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2">Understanding the Language of Problems 🧐</h2>
+        <p class="text-light-text mb-8">
+            Learning to identify and articulate problems effectively is the first step toward finding solutions. This section introduces key nouns and verbs commonly used to describe difficulties in a professional setting.
+        </p>
+
+        <!-- Vocabulary Term: Blindspot -->
+        <div id="blindspot-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Blindspot</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="blindspot"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun (Substantivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> An area in which one's view is obstructed; an area of weakness or a lack of awareness regarding a particular issue or aspect.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Ponto cego; Falha; Inconsciência]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team consistently overlooks a certain aspect of project planning.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our biggest <strong class="term-title">blindspot</strong> in the market analysis was underestimating the rise of new competitors."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma avaliação de equipe: "O feedback revelou que temos um <strong class="term-title">ponto cego</strong> na comunicação interdepartamental." (The feedback revealed that we have a <strong class="term-title">blindspot</strong> in interdepartmental communication.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> Use "blindspot" to refer to an area of weakness, ignorance, or lack of foresight that can lead to problems. It's often used in strategic discussions or performance reviews. For Brazilians, it's important not to confuse it with a literal "blind spot" in traffic; it's a metaphorical term for an area of unawareness or deficiency in strategy or execution.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Blindspot <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'blindspot' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Botched -->
+        <div id="botched-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Botched</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="botched"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Adjective (Adjetivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Carried out badly or clumsily.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Malfeito; Estragado; Malconduzido]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A task or project was executed poorly.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The entire software deployment was <strong class="term-title">botched</strong> due to a lack of proper testing."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Após uma tentativa de reparo: "A instalação da nova máquina foi <strong class="term-title">malfeita</strong> e causou mais problemas." (The installation of the new machine was <strong class="term-title">botched</strong> and caused more problems.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Botched" is used to describe something that was poorly done, leading to failure or further problems. It implies incompetence or carelessness in execution. It's a strong word, so use it when the failure is clearly due to poor execution, not just a minor error. Avoid using "botched" for small, easily fixable mistakes; it implies a significant, damaging failure.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Botched <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'botched' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Bumpy -->
+        <div id="bumpy-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Bumpy</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="bumpy"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Adjective (Adjetivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Characterized by an uneven or difficult course; full of jolts and ups and downs.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Turbulento; Acidentado; Cheio de altos e baixos]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Describing a project or period that has faced many small difficulties.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The initial phase of the merger was quite <strong class="term-title">bumpy</strong>, but we're now finding our stride."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Ao final de um projeto: "A implementação do novo sistema foi um pouco <strong class="term-title">turbulenta</strong>, mas conseguimos." (The implementation of the new system was a bit <strong class="term-title">bumpy</strong>, but we managed.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Bumpy" is often used metaphorically to describe a period or process that has been difficult or unstable, with many minor issues or fluctuations. It suggests a series of small challenges rather than one major problem. It's a good alternative to "difficult" when you want to imply a series of ups and downs, rather than a single, large obstacle.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Bumpy <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'bumpy' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Delay -->
+        <div id="delay-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Delay</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="delay"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun/Verb (Substantivo/Verbo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> A period of time by which something is postponed or slowed down. (Noun) / To make (someone or something) late or slow. (Verb)</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Atraso; Demora; Atrasar; Demorar]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A project milestone is not met on time.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1 (Noun):</strong> "The unexpected regulatory changes caused a significant <strong class="term-title">delay</strong> in product launch."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Verb):</strong> "We must ensure nothing will <strong class="term-title">delay</strong> the final approval process."</li>
+                    <li><strong class="text-primary-blue">Example 3 (Brazil Context):</strong> Em um e-mail de projeto: "Haverá um <strong class="term-title">atraso</strong> na entrega devido a problemas com o fornecedor." (There will be a <strong class="term-title">delay</strong> in delivery due to supplier issues.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Delay" is a straightforward and widely used term for any postponement or slowing down of a process or event. It can be used as both a noun and a verb. For Brazilians, be careful not to use "late" as a verb in this context (e.g., "The project late"). "Delay" is the correct verb for causing something to be late.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Delay <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'delay' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Downtime -->
+        <div id="downtime-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Downtime</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="downtime"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun (Substantivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Time during which a machine, especially a computer, is out of action or unavailable for use.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Tempo de inatividade; Período de inatividade]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A server goes offline unexpectedly.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The unexpected server crash resulted in three hours of system <strong class="term-title">downtime</strong>, impacting customer service."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em um relatório de TI: "Minimizar o <strong class="term-title">tempo de inatividade</strong> do sistema é nossa prioridade para o próximo trimestre." (Minimizing system <strong class="term-title">downtime</strong> is our priority for the next quarter.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Downtime" specifically refers to periods when systems, equipment, or services are not operational. It's crucial in IT, manufacturing, and any service-oriented business. It's more precise than just saying "the system is not working" when you're referring to a planned or unplanned period of non-operation.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Downtime <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'downtime' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Frustrations -->
+        <div id="frustrations-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Frustrations</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="frustrations"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun (Substantivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> The feeling of being upset or annoyed, especially because of an inability to change or achieve something.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Frustrações; Desapontamentos]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Employees are feeling demotivated by persistent obstacles.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Many employees expressed their <strong class="term-title">frustrations</strong> with the outdated software during the survey."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma pesquisa de clima: "As principais <strong class="term-title">frustrações</strong> da equipe estão relacionadas à falta de reconhecimento." (The team's main <strong class="term-title">frustrations</strong> are related to lack of recognition.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Frustrations" refers to the emotional impact of problems or obstacles. It's useful when discussing morale, employee satisfaction, or user experience. For Brazilians, it's important to use the plural "frustrations" when referring to multiple sources of annoyance, and not just "frustration" as a general state of being frustrated.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Frustrations <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'frustrations' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Hurdle -->
+        <div id="hurdle-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Hurdle</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="hurdle"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun (Substantivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> An obstacle or difficulty. Often implies something that needs to be overcome to achieve a goal.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Obstáculo; Dificuldade; Barreira]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team faces a challenge that needs to be overcome.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Securing the necessary permits was a significant <strong class="term-title">hurdle</strong> for the construction project."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Na gestão de projetos: "O maior <strong class="term-title">obstáculo</strong> agora é a aprovação final dos stakeholders." (The biggest <strong class="term-title">hurdle</strong> now is the final approval from stakeholders.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Hurdle" is commonly used to describe a specific obstacle that must be overcome to make progress. It implies a challenge that can be cleared with effort. It's more active than "obstacle" as it suggests something to be "jumped over" or overcome. For Brazilians, it's a good alternative to always using "challenge" when describing a specific, surmountable barrier.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Hurdle <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'hurdle' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Loophole -->
+        <div id="loophole-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Loophole</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="loophole"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun (Substantivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> An ambiguity or inadequacy in the law or a set of rules.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Brecha; Lacuna; Escapismo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A contract has a weakness that could be exploited.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The legal team discovered a potential <strong class="term-title">loophole</strong> in the new policy that could lead to unforeseen liabilities."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise fiscal: "Há uma <strong class="term-title">brecha</strong> na legislação que permite otimização de impostos, mas é arriscado." (There's a <strong class="term-title">loophole</strong> in the legislation that allows for tax optimization, but it's risky.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Loophole" is specific to weaknesses in rules, laws, or systems that can be exploited. It's often used in legal, compliance, or policy discussions. It's crucial for understanding how regulations can be circumvented, which is a common topic in business and legal contexts in Brazil and globally.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Loophole <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'loophole' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Loose Ends -->
+        <div id="loose-ends-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Loose Ends</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="loose ends"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Unresolved details or unfinished tasks, especially in a complex situation or project.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Pontas soltas; Detalhes pendentes; Assuntos inacabados]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A project is nearing completion, but some minor tasks remain.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Before we can officially close the project, we need to tie up a few <strong class="term-title">loose ends</strong> with client deliverables."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de fechamento: "Ainda temos algumas <strong class="term-title">pontas soltas</strong> na documentação que precisam ser finalizadas." (We still have some <strong class="term-title">loose ends</strong> in the documentation that need to be finalized.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Loose ends" refers to small, unfinished details or unresolved issues that need to be addressed before something can be considered complete or fully settled. It's common in project management and administrative contexts. This is a very common idiom, and using it correctly shows a good grasp of natural English phrasing, avoiding literal translations like "open points."</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Loose Ends <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'loose ends' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Pain in the Neck / Ass -->
+        <div id="pain-in-the-neck-ass-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Pain in the Neck / Ass</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="pain in the neck"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Someone or something that is very annoying or difficult to deal with. "Pain in the ass" is more vulgar than "pain in the neck."</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Dor de cabeça; Um saco; Um incômodo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context - Informal):</strong> Complaining about a difficult client or a tedious task.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "This legacy system is a real <strong class="term-title">pain in the neck</strong> to integrate with new software."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Informal/Brazil Context):</strong> "Aquele cliente novo é uma verdadeira <strong class="term-title">dor de cabeça</strong>, sempre mudando de ideia." (That new client is a real <strong class="term-title">pain in the neck</strong>, always changing their mind.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> These are highly informal idioms. "Pain in the neck" is generally acceptable in casual work conversations, but "pain in the ass" should be avoided in all professional settings due to its vulgarity. Use them to describe annoying people or difficult tasks, but be mindful of your audience and the context. Brazilians might be tempted to translate "dor de cabeça" literally as "headache," but "pain in the neck" is the more idiomatic and appropriate expression for an annoying person or situation.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Pain in the Neck / Ass <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'pain in the neck' or 'pain in the ass' (with caution!) in a sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Pain Point -->
+        <div id="pain-point-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Pain Point</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="pain point"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun (Substantivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> A specific problem or difficulty experienced by a customer or user that a business can solve.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Ponto de dor; Problema do cliente]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Identifying customer needs for a new product or service.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our market research identified slow customer support as a major <strong class="term-title">pain point</strong> for our users."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em um workshop de design thinking: "Precisamos entender os <strong class="term-title">pontos de dor</strong> dos nossos clientes para desenvolver soluções eficazes." (We need to understand our clients' <strong class="term-title">pain points</strong> to develop effective solutions.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Pain point" is a business and marketing term used to describe a specific problem that a customer or user experiences, which a product or service can address. It's a professional way to talk about customer needs and challenges. This term is widely used in product development and strategy, and understanding it is key to participating in such discussions effectively.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Pain Point <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'pain point' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Rough Patch -->
+        <div id="rough-patch-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Rough Patch</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="rough patch"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> A period of difficulty or hardship.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Fase difícil; Período complicado]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team or company is going through a challenging period.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The company went through a <strong class="term-title">rough patch</strong> last year, but we've recovered well."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em um balanço trimestral: "O setor de manufatura está passando por uma <strong class="term-title">fase difícil</strong> devido ao aumento dos custos." (The manufacturing sector is going through a <strong class="term-title">rough patch</strong> due to increased costs.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Rough patch" is an idiomatic expression used to describe a temporary period of difficulty or struggle. It implies that while things are tough, there's an expectation of improvement. It's a more nuanced way to describe a challenging period than simply "problems," as it suggests a temporary nature and potential for recovery.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Rough Patch <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'rough patch' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Silver Bullet -->
+        <div id="silver-bullet-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Silver Bullet</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="silver bullet"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> A simple, magical solution to a difficult problem.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Bala de prata; Solução mágica]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Discussing a complex problem that requires a multifaceted approach.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "There's no <strong class="term-title">silver bullet</strong> for improving customer satisfaction; it requires continuous effort across all departments."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma discussão de estratégia: "Não existe uma <strong class="term-title">bala de prata</strong> para resolver todos os problemas de logística." (There's no <strong class="term-title">silver bullet</strong> to solve all logistics problems.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Silver bullet" is typically used in the negative ("no silver bullet") to emphasize that a complex problem does not have a single, easy solution and requires a more comprehensive approach. This idiom is important for conveying realism in problem-solving discussions, especially in a culture that might sometimes seek quick fixes.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Silver Bullet <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'silver bullet' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Tip of the Iceberg -->
+        <div id="tip-of-the-iceberg-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Tip of the Iceberg</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="tip of the iceberg"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Only a small, visible part of a much larger, hidden problem or situation.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Ponta do iceberg; Apenas o começo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Discovering a minor issue that suggests a deeper, more significant problem.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The recent data breach was just the <strong class="term-title">tip of the iceberg</strong>; we suspect a much larger security vulnerability."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma investigação interna: "As irregularidades encontradas são apenas a <strong class="term-title">ponta do iceberg</strong> de um problema maior." (The irregularities found are just the <strong class="term-title">tip of the iceberg</strong> of a larger problem.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This idiom is used to indicate that a problem or situation that is currently visible or known is only a small part of a much larger and more serious underlying issue that has not yet been fully revealed. It's a powerful way to convey the potential scale of a problem, especially when presenting initial findings.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Tip of the Iceberg <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'tip of the iceberg' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Tipping Point -->
+        <div id="tipping-point-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Tipping Point</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="tipping point"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> The point at which a series of small changes or incidents becomes significant enough to cause a larger, more important change.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Ponto de virada; Ponto crítico]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A series of minor issues leads to a major system failure.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The increasing customer churn reached a <strong class="term-title">tipping point</strong>, forcing us to completely rethink our retention strategy."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de mercado: "A queda contínua nas vendas atingiu um <strong class="term-title">ponto de virada</strong>, e precisamos de ações urgentes." (The continuous drop in sales reached a <strong class="term-title">tipping point</strong>, and we need urgent actions.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Tipping point" describes the critical moment when a situation changes irreversibly, often due to an accumulation of smaller factors. It's used to highlight a moment of significant shift or crisis. This term is very useful for strategic discussions about market changes, customer behavior, or internal operational shifts, emphasizing the critical moment when a situation demands a new approach.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Tipping Point <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'tipping point' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Underlying Problem -->
+        <div id="underlying-problem-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Underlying Problem</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="underlying problem"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> The basic or fundamental cause of an issue, often hidden or not immediately obvious.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Problema subjacente; Causa raiz]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Investigating recurring issues to find their root cause.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The frequent system crashes are merely symptoms of a deeper <strong class="term-title">underlying problem</strong> with our infrastructure."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de desempenho: "A baixa produtividade é um sintoma de um <strong class="term-title">problema subjacente</strong> na gestão de equipe." (Low productivity is a symptom of an <strong class="term-title">underlying problem</strong> in team management.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This phrase is used to refer to the root cause of a problem, which may not be immediately apparent. It's crucial in root cause analysis and strategic problem-solving. Brazilians often use "problema de fundo" or "causa raiz," and "underlying problem" is the perfect English equivalent, demonstrating a deeper analytical understanding.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Underlying Problem <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'underlying problem' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Dire Situation -->
+        <div id="dire-situation-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Dire Situation</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="dire situation"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> An extremely serious or urgent situation.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Situação terrível; Situação calamitosa; Crise grave]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> The company is facing a severe financial crisis.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "If we don't secure new funding, the company will be in a <strong class="term-title">dire situation</strong> by next quarter."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de emergência: "A queda nas vendas nos colocou em uma <strong class="term-title">situação terrível</strong>." (The sales drop put us in a <strong class="term-title">dire situation</strong>.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Dire situation" is used to emphasize the extreme seriousness and urgency of a problem, indicating a critical need for immediate action. It's a strong and formal phrase, appropriate for conveying the gravity of a crisis. Avoid overusing it for minor inconveniences, as it dilutes its impact.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Dire Situation <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'dire situation' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Elephant in the Room -->
+        <div id="elephant-in-the-room-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Elephant in the Room</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="elephant in the room"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> An obvious problem or controversial issue that no one wants to discuss.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [O elefante na sala; Assunto delicado]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team avoids discussing a known, major problem.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Let's address the <strong class="term-title">elephant in the room</strong>: our declining sales figures."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião tensa: "Precisamos falar sobre o <strong class="term-title">elefante na sala</strong>, que é a insatisfação da equipe." (We need to talk about the <strong class="term-title">elephant in the room</strong>, which is the team's dissatisfaction.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This idiom is used to refer to a significant problem or controversial issue that is obvious to everyone present but is intentionally avoided in discussion. It highlights a reluctance to confront difficult truths. Using this idiom correctly shows a good understanding of English idiomatic expressions, which can be a weak point for non-native speakers who tend to translate literally.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Elephant in the Room <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'elephant in the room' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Roadblock -->
+        <div id="roadblock-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Roadblock</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="roadblock"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun (Substantivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> A barrier or obstacle that prevents progress.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Bloqueio; Obstáculo; Barreira]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A project encounters a major impediment.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Lack of executive approval has become a significant <strong class="term-title">roadblock</strong> to moving forward with the new initiative."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Na gestão de projetos: "A burocracia é um <strong class="term-title">bloqueio</strong> comum em projetos governamentais." (Bureaucracy is a common <strong class="term-title">roadblock</strong> in government projects.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Roadblock" is a strong metaphor for an obstacle that completely halts or severely impedes progress, often implying a need for a significant intervention to clear it. It's more impactful than "obstacle" alone, suggesting a more formidable barrier. Brazilians might use "barreira" or "impedimento," and "roadblock" is a strong, direct equivalent in English.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Roadblock <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'roadblock' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Sticky -->
+        <div id="sticky-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Sticky</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="sticky"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Adjective (Adjetivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Difficult or awkward to deal with; problematic.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Complicado; Delicado; Problemático]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Describing a sensitive or complex issue.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The negotiation with the new vendor is getting a bit <strong class="term-title">sticky</strong> due to pricing disagreements."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma conversa sobre RH: "A situação com aquele funcionário é bem <strong class="term-title">delicada</strong>, precisamos de cautela." (The situation with that employee is quite <strong class="term-title">sticky</strong>, we need caution.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Sticky" is an informal but widely understood adjective used to describe a situation or problem that is difficult, sensitive, or awkward to handle. It implies that the issue requires careful navigation. It's a good way to describe a problem that is not necessarily "big" but is complicated by interpersonal or political factors.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Sticky <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'sticky' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Paradigm Shift -->
+        <div id="paradigm-shift-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Paradigm Shift</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="paradigm shift"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> A fundamental change in approach or underlying assumptions.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Mudança de paradigma; Virada de modelo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> The industry is undergoing a major transformation.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The move to cloud-based solutions represents a significant <strong class="term-title">paradigm shift</strong> for our entire IT department."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em um congresso: "A inteligência artificial está causando uma <strong class="term-title">mudança de paradigma</strong> na forma como as empresas operam." (Artificial intelligence is causing a <strong class="term-title">paradigm shift</strong> in how companies operate.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Paradigm shift" is a formal term used to describe a major, fundamental change in the way something is conceptualized or done. It's often used in strategic planning, innovation, or industry analysis. This term is crucial for discussing significant transformations, and using it correctly demonstrates a high level of professional vocabulary.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Paradigm Shift <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'paradigm shift' in a sentence related to a work change."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Pressing Issues -->
+        <div id="pressing-issues-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Pressing Issues</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="pressing issues"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Important and urgent problems that require immediate attention.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Questões urgentes; Problemas prementes]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Prioritizing tasks in a crisis situation.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "We need to focus on the most <strong class="term-title">pressing issues</strong> first, such as the critical security vulnerabilities."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de diretoria: "A retenção de talentos é uma das <strong class="term-title">questões mais urgentes</strong> que enfrentamos." (Talent retention is one of the most <strong class="term-title">pressing issues</strong> we face.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Pressing issues" emphasizes the urgency and importance of problems, indicating that they cannot be ignored and require immediate action. It's a professional way to highlight critical priorities. This phrase is more formal and impactful than simply saying "urgent problems," conveying a sense of gravity and immediate need for resolution.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Pressing Issues <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'pressing issues' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: On the Line -->
+        <div id="on-the-line-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: On the Line</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="on the line"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> At risk; in a precarious or dangerous position.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Em jogo; Em risco; Na berlinda]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A critical project or reputation is at risk.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our reputation is <strong class="term-title">on the line</strong> if we fail to deliver this project on time."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma situação de crise: "A credibilidade da empresa está <strong class="term-title">em jogo</strong> com esse escândalo." (The company's credibility is <strong class="term-title">on the line</strong> with this scandal.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "On the line" is an idiom used to express that something important (like reputation, a job, or a project) is at risk or could be lost if a situation is not handled correctly. It conveys a sense of high stakes. This idiom is very common in business conversations to emphasize the potential negative consequences of failure, and using it correctly shows a strong command of English idioms.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: On the Line <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'on the line' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verbs to Describe Problems and Solutions Section -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12">Verbs to Describe Problems and Solutions 🗣️</h2>
+        <p class="text-light-text mb-8">
+            These verbs are essential for communicating about the existence of problems and the actions taken to address them.
+        </p>
+
+        <!-- Vocabulary Term: Call into Question -->
+        <div id="call-into-question-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Call into Question</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="call into question"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb Phrase (Expressão Verbal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To cause doubts about something; to challenge the validity or truth of something.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Colocar em questão; Pôr em dúvida]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> New evidence emerges that challenges a previous decision.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The recent audit findings <strong class="term-title">call into question</strong> the accuracy of our financial projections."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de projeto: "Os novos dados <strong class="term-title">colocam em questão</strong> a viabilidade do cronograma original." (The new data <strong class="term-title">calls into question</strong> the feasibility of the original schedule.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This phrase is used when something causes uncertainty or doubt about a previously accepted fact, decision, or assumption. It's formal and often used in critical analysis or review contexts. It's a more sophisticated way to express doubt than simply saying "I doubt it," and is appropriate in formal business discussions.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Call into Question <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'call into question' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Cause Problems -->
+        <div id="cause-problems-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Cause Problems</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="cause problems"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb Phrase (Expressão Verbal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To be the reason for difficulties or issues.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Causar problemas; Gerar dificuldades]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A new policy has unintended negative consequences.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The recent changes in the supply chain are starting to <strong class="term-title">cause problems</strong> with our production schedule."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de equipe: "A falta de comunicação pode <strong class="term-title">causar problemas</strong> sérios no projeto." (Lack of communication can <strong class="term-title">cause serious problems</strong> in the project.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This is a direct and clear phrase for attributing the origin of problems. It's versatile and can be used in various contexts to explain the source of difficulties. While simple, it's important to use it accurately, directly linking the cause to the effect, rather than vague statements like "problems happen."</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Cause Problems <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'cause problems' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Hinder -->
+        <div id="hinder-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Hinder</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="hinder"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb (Verbo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To create difficulties for (someone or something), resulting in delay or obstruction.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Atrapalhar; Dificultar; Obstruir]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A factor is slowing down project progress.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Lack of clear requirements will seriously <strong class="term-title">hinder</strong> our ability to deliver the software on time."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma avaliação de desempenho: "A burocracia interna pode <strong class="term-title">atrapalhar</strong> a inovação na empresa." (Internal bureaucracy can <strong class="term-title">hinder</strong> innovation in the company.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Hinder" is a formal verb used to describe something that obstructs or delays progress. It implies that something is making a task more difficult or slower to complete. It's a more sophisticated alternative to "make difficult" or "block," and is well-suited for formal reports and presentations.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Hinder <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'hinder' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Jeopardize -->
+        <div id="jeopardize-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Jeopardize</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="jeopardize"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb (Verbo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To put (someone or something) into a situation in which there is a danger of loss, harm, or failure.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Comprometer; Colocar em risco; Pôr em perigo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A risky decision could harm the project's success.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Rushing the product launch could <strong class="term-title">jeopardize</strong> our reputation for quality."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de estratégia: "Ignorar as regulamentações ambientais pode <strong class="term-title">comprometer</strong> a licença da empresa." (Ignoring environmental regulations could <strong class="term-title">jeopardize</strong> the company's license.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Jeopardize" is a strong verb used to indicate that something is putting an important asset, goal, or outcome at risk. It conveys a sense of serious potential negative consequences. This term is crucial for risk assessment and strategic planning, highlighting the severity of potential negative outcomes.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Jeopardize <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'jeopardize' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Move the Goalpost -->
+        <div id="move-the-goalpost-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Move the Goalpost</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="move the goalpost"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To unfairly change the rules or conditions of a process or task while it is already in progress.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Mudar as regras do jogo; Alterar o objetivo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Project requirements change unexpectedly mid-project.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "It's hard to complete the project on time when the client keeps <strong class="term-title">moving the goalpost</strong> with new feature requests."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma conversa de projeto: "O gerente está sempre <strong class="term-title">mudando as regras do jogo</strong>, fica difícil planejar." (The manager is always <strong class="term-title">moving the goalpost</strong>, it's hard to plan.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This idiom is used to describe a frustrating situation where the criteria for success or completion are changed during a task, making it harder to achieve the original objective. It implies unfairness or inconsistency. This is a very common and effective idiom to express frustration with shifting requirements, a frequent issue in project management.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Move the Goalpost <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'move the goalpost' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Pose (a problem/threat) -->
+        <div id="pose-problem-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Pose (a problem/threat)</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="pose"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb (Verbo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To present or constitute (a difficulty or threat).</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Representar; Apresentar; Constituir (um problema/ameaça)]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A new market trend introduces a challenge.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The new regulations <strong class="term-title">pose</strong> a significant challenge for our compliance department."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de risco: "A instabilidade econômica <strong class="term-title">apresenta</strong> uma ameaça para o crescimento da empresa." (Economic instability <strong class="term-title">poses</strong> a threat to the company's growth.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Pose" is a formal verb used to indicate that something presents or creates a problem, threat, or challenge. It's common in formal reports and strategic discussions. It's a more formal and precise verb than "cause" when discussing the introduction of a new difficulty or risk.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Pose (a problem/threat) <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'pose' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Cope with -->
+        <div id="cope-with-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Cope with</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="cope with"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Phrasal Verb (Verbo Frasal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To deal effectively with something difficult.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Lidar com; Enfrentar; Dar conta]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team is managing a high workload.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our customer service team is struggling to <strong class="term-title">cope with</strong> the increased volume of inquiries."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de equipe: "Precisamos de mais recursos para <strong class="term-title">lidar com</strong> a demanda crescente." (We need more resources to <strong class="term-title">cope with</strong> the increasing demand.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Cope with" is used to describe the act of managing or handling a difficult situation, often implying resilience or the ability to endure challenges. It's versatile for both personal and professional contexts. It's a key phrase for discussing resilience and resource management in the face of difficulties.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Cope with <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'cope with' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Tackle (a problem) -->
+        <div id="tackle-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Tackle (a problem)</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="tackle"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb (Verbo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To make determined efforts to deal with (a problem or difficult task).</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Enfrentar; Abordar; Lidar com]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team is ready to confront a major challenge.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "We need to <strong class="term-title">tackle</strong> the root causes of employee turnover head-on."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de estratégia: "Vamos <strong class="term-title">enfrentar</strong> os desafios do mercado com uma nova abordagem." (We will <strong class="term-title">tackle</strong> the market challenges with a new approach.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Tackle" implies a proactive and determined approach to dealing with a problem or task. It suggests a direct and energetic effort to resolve something difficult. It's a strong, action-oriented verb that conveys leadership and initiative in problem-solving.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Tackle (a problem) <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'tackle' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Running Behind -->
+        <div id="running-behind-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Running Behind</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="running behind"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Phrasal Verb (Expressão Verbal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To be late or to be making slower progress than planned.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Estar atrasado; Estar com o cronograma atrasado]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A project is not on schedule.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The development team is <strong class="term-title">running behind</strong> schedule due to unforeseen technical issues."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em um relatório de projeto: "Estamos <strong class="term-title">atrasados</strong> na entrega da fase dois, mas estamos acelerando." (We are <strong class="term-title">running behind</strong> on phase two delivery, but we are accelerating.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Running behind" is a common and informal phrase used to indicate that a project, task, or person is not keeping up with the planned schedule or deadline. It's widely understood in professional settings. It's a more natural and common expression than simply "being late" when referring to project progress.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Running Behind <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'running behind' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Lag Behind -->
+        <div id="lag-behind-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Lag Behind</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="lag behind"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Phrasal Verb (Expressão Verbal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To fall behind in progress, development, or competition.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Ficar para trás; Estar atrasado; Não acompanhar]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A company's technology is not keeping up with competitors.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our software is starting to <strong class="term-title">lag behind</strong> the competition in terms of features."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de mercado: "Se não investirmos em inovação, vamos <strong class="term-title">ficar para trás</strong>." (If we don't invest in innovation, we will <strong class="term-title">lag behind</strong>.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Lag behind" is used to describe a situation where something (a company, product, or process) is not progressing as quickly or effectively as others, often in a competitive context. It implies a need to catch up. This term is vital for competitive analysis and strategic planning, indicating a need for accelerated development or adaptation.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Lag Behind <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'lag behind' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Press for Time -->
+        <div id="press-for-time-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Press for Time</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="press for time"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To have very little time available; to be in a hurry.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Estar com pouco tempo; Estar apurado com o tempo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team is facing a tight deadline.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "We're really <strong class="term-title">pressed for time</strong> to complete all deliverables before the end of the quarter."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de projeto: "Estamos muito <strong class="term-title">apurados com o tempo</strong> para finalizar o relatório." (We are very <strong class="term-title">pressed for time</strong> to finish the report.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Press for time" is a common idiom used to express that there is a limited amount of time available to complete a task, implying urgency and the need for efficiency. It's a professional way to communicate time constraints. This idiom is more natural than saying "we have little time" and effectively conveys the pressure of a deadline.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Press for Time <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'press for time' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Play Down -->
+        <div id="play-down-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Play Down</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="play down"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Phrasal Verb (Verbo Frasal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To try to make something seem less important or serious than it really is.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Minimizar; Desvalorizar; Diminuir a importância]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A manager tries to reassure the team about a difficult situation.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The CEO tried to <strong class="term-title">play down</strong> the impact of the economic downturn on our quarterly earnings."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma coletiva de imprensa: "O porta-voz tentou <strong class="term-title">minimizar</strong> a gravidade do incidente." (The spokesperson tried to <strong class="term-title">play down</strong> the seriousness of the incident.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Play down" is used to describe an attempt to reduce the perceived importance or severity of a problem. It can be used strategically to manage perceptions, but can also be seen as dismissive if the problem is indeed serious. This phrasal verb is important for understanding communication strategies in business, especially during crises or when managing stakeholder expectations.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Play Down <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'play down' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Undermining -->
+        <div id="undermining-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Undermining</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="undermining"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb (Gerund/Present Participle) (Verbo/Gerúndio)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Lessening the effectiveness, power, or ability of (someone or something), especially gradually or insidiously.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Minando; Subvertendo; Prejudicando]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A colleague's actions are negatively affecting team morale.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "His constant negativity is <strong class="term-title">undermining</strong> team morale and productivity."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma avaliação de equipe: "A falta de feedback está <strong class="term-title">minando</strong> a confiança dos colaboradores." (Lack of feedback is <strong class="term-title">undermining</strong> employee trust.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Undermining" describes a gradual and often subtle process of weakening or damaging something (e.g., authority, trust, morale, a project). It implies a slow erosion of strength or effectiveness. This term is crucial for discussing internal team dynamics and leadership challenges, as it describes a subtle but impactful form of negative influence.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Undermining <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'undermining' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Diminish (an issue) -->
+        <div id="diminish-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Diminish (an issue)</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="diminish"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb (Verbo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To make or become less; to reduce in size, importance, or intensity.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Diminuir; Reduzir; Atenuar]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Implementing measures to reduce the impact of a problem.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our new strategy aims to <strong class="term-title">diminish</strong> the impact of seasonal fluctuations on sales."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Na gestão de riscos: "Precisamos de ações rápidas para <strong class="term-title">diminuir</strong> os efeitos da crise." (We need quick actions to <strong class="term-title">diminish</strong> the effects of the crisis.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Diminish" is a formal verb used to describe the act of making a problem or its effects less severe or significant. It's similar to "mitigate" but can apply more broadly to any reduction in magnitude. It's a precise term for describing efforts to reduce the scale or impact of an issue, rather than eliminating it entirely.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Diminish (an issue) <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'diminish' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Foresee (a problem) -->
+        <div id="foresee-problem-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Foresee (a problem)</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="foresee"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb (Verbo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To know or realize beforehand that something will happen.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Prever; Antever; Antecipar]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> During planning, anticipating potential issues.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "We didn't <strong class="term-title">foresee</strong> the extent of the technical difficulties, which led to project delays."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de planejamento: "É importante <strong class="term-title">prever</strong> os riscos potenciais antes de iniciar o projeto." (It's important to <strong class="term-title">foresee</strong> potential risks before starting the project.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Foresee" is a formal verb used to describe the act of anticipating problems or events before they occur. It's crucial in risk assessment and proactive planning. This term is important for demonstrating foresight and strategic thinking, avoiding the common mistake of only reacting to problems after they arise.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Foresee (a problem) <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'foresee' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Where the Problem Lies -->
+        <div id="where-the-problem-lies-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Where the Problem Lies</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="where the problem lies"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiomatic Phrase (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> The fundamental cause or source of a difficulty.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Onde o problema reside; Onde está a raiz do problema]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Identifying the root cause of a recurring issue.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "After a thorough investigation, we finally pinpointed <strong class="term-title">where the problem lies</strong>: it's a fundamental flaw in the database design."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de falhas: "Precisamos descobrir <strong class="term-title">onde o problema reside</strong> para evitar futuras ocorrências." (We need to find out <strong class="term-title">where the problem lies</strong> to prevent future occurrences.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This phrase is used to indicate the core or root cause of a problem, often after an investigation or analysis. It's a way of stating the fundamental issue that needs to be addressed. It's a more analytical and professional way to discuss the source of problems, moving beyond superficial symptoms.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Where the Problem Lies <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'where the problem lies' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Effect Box: We Have Got -->
+        <div class="mb-8 p-6 bg-special-box-bg border-2 border-special-box-border rounded-lg shadow-xl text-center">
+            <h3 class="text-2xl font-bold text-special-box-border mb-4">Special Note: "We Have Got" 🚨</h3>
+            <p class="text-dark-text text-lg mb-3">
+                The phrase "<strong class="font-semibold">We have got</strong>" is a more informal and slightly emphatic way of saying "<strong class="font-semibold">We have</strong>." It's very common in spoken English, especially in American English.
+            </p>
+            <p class="text-dark-text text-lg mb-3">
+                While "<strong class="font-semibold">We have a problem</strong>" is perfectly clear and professional, "<strong class="font-semibold">We have got a problem</strong>" adds a touch of urgency or emphasizes the current possession of the problem.
+            </p>
+            <ul class="list-disc list-inside ml-4 mt-2 text-gray-800 text-left">
+                <li><strong class="text-primary-blue">Example:</strong> "Team, <strong class="font-semibold">we have got a situation here</strong> with the server going down. All hands on deck!"</li>
+                <li><strong class="portuguese-text">Português:</strong> "Equipe, <strong class="font-semibold">temos uma situação aqui</strong> com o servidor caindo. Todos a postos!"</li>
+            </ul>
+            <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> Use "<strong class="font-semibold">we have got</strong>" in slightly less formal but still professional contexts where you want to convey a bit more immediacy or emphasis. Avoid it in very formal written reports or presentations. This is a common point where Brazilians might struggle, often overusing "have" when "have got" would sound more natural and emphatic in spoken English.</p>
+        </div>
+
+
+        <!-- Informal & Direct Expressions Section -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12" id="informal-expressions">Informal & Direct Expressions (Use with Caution!) ⚠️</h2>
+        <p class="text-light-text mb-8">
+            These phrases are highly informal and can be perceived as aggressive or unprofessional in a work environment. They are generally best avoided in professional communication.
+        </p>
+
+        <!-- Vocabulary Term: Big Deal -->
+        <div id="big-deal-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Big Deal</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="big deal"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom/Noun Phrase (Expressão Idiomática/Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Something important or significant. Often used ironically or dismissively, as in "no big deal" (not important).</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Grande coisa; Grande negócio; Importante; (ironicamente) Que grande coisa!]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> You're reassuring a colleague about a minor setback.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1 (Dismissive):</strong> "The client requested a small change, but it's <strong class="term-title">no big deal</strong>; we can adjust it quickly."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Emphatic):</strong> You're emphasizing the importance of a new project. "Securing this partnership with the new vendor is a really <strong class="term-title">big deal</strong> for our company's growth."</li>
+                    <li><strong class="text-primary-blue">Example 3 (Brazil Context):</strong> In a Brazilian casual work conversation: "Ah, o relatório atrasou um pouco, mas <strong class="term-title">não é grande coisa</strong>, o chefe entendeu." (Oh, the report was a bit late, but it's <strong class="term-title">no big deal</strong>, the boss understood.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "<strong class="term-title">Big deal</strong>" is an informal phrase. When used positively, it emphasizes significance. When used with "no" ("<strong class="term-title">no big deal</strong>"), it downplays the importance or severity of something, often to reassure or dismiss a minor issue. While common in spoken English, use with caution in very formal written communication. Brazilians should be aware of the ironic or dismissive tone it can carry, which might be misinterpreted if not used carefully.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Big Deal <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'big deal' or 'no big deal' in a sentence related to a work problem."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Don't Blame You -->
+        <div id="dont-blame-you-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Don't Blame You</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="don't blame you"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Informal Expression (Expressão Informal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To understand and sympathize with someone's decision or feeling, implying that their action or reaction is reasonable given the circumstances.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Não te culpo; Não te julgo; Entendo você]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context - Informal):</strong> A colleague decides to leave a challenging project.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Given the impossible deadlines, I <strong class="term-title">don't blame you</strong> for wanting to switch teams."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma conversa informal: "Com todo esse estresse, <strong class="term-title">não te culpo</strong> por querer tirar férias." (With all this stress, I <strong class="term-title">don't blame you</strong> for wanting to take a vacation.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This informal phrase is used to express empathy and understanding for someone's decision or feeling, especially when it's a reaction to a difficult situation. It's best used in casual professional interactions. Brazilians often use "não te culpo" or "eu te entendo," and this is a natural English equivalent for showing empathy without being overly formal.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Don't Blame You <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'don't blame you' in an appropriate (e.g., informal) sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Don't Sweat It -->
+        <div id="dont-sweat-it-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Don't Sweat It</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="don't sweat it"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Informal Expression (Expressão Informal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Don't worry about it; don't get anxious or upset about something, especially something minor.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Não se preocupe; Não esquenta; Fica tranquilo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context - Informal):</strong> Reassuring a colleague about a minor mistake.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "You made a small typo in the report, but <strong class="term-title">don't sweat it</strong>; I've already corrected it."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Após um pequeno erro: "Ah, <strong class="term-title">não esquenta</strong> com isso, acontece. Já resolvemos." (Oh, <strong class="term-title">don't sweat it</strong>, it happens. We already fixed it.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This informal idiom is used to tell someone not to worry or get upset about something, usually a minor issue. It's a reassuring and casual way to dismiss a small problem. Best for informal work interactions. It's a common and friendly way to downplay a minor issue, sounding much more natural than a direct translation of "não se preocupe."</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Don't Sweat It <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'don't sweat it' in an appropriate (e.g., informal) sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Got Caught Without an Umbrella -->
+        <div id="got-caught-without-an-umbrella-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Got Caught Without an Umbrella</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="got caught without an umbrella"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To be unprepared for an unexpected difficulty or problem.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Pego de surpresa; Desprevenido; Sem plano B]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context - Informal):</strong> A team faces an unforeseen issue without a contingency plan.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "When the main server crashed, we really <strong class="term-title">got caught without an umbrella</strong>, as we had no backup system in place."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma crise: "A empresa <strong class="term-title">foi pega de surpresa</strong> pela mudança no mercado, sem um plano de contingência." (The company <strong class="term-title">got caught without an umbrella</strong> by the market change, without a contingency plan.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This informal idiom is used to describe a situation where someone is unprepared for a sudden problem or difficulty. It highlights a lack of foresight or contingency planning. Best for informal discussions. This idiom is a vivid and memorable way to describe being unprepared, and using it correctly shows a good understanding of English idiomatic expressions.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Got Caught Without an Umbrella <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'got caught without an umbrella' in an appropriate (e.g., informal) sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Tell Me About It -->
+        <div id="tell-me-about-it-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Tell Me About It</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="tell me about it"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Informal Expression (Expressão Informal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Used to express sympathy or agreement, especially when someone is complaining about something that the speaker has also experienced.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Nem me fale; Quem o diga; Eu sei bem]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context - Informal):</strong> A colleague complains about a shared frustration.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "This new software is so buggy." - "<strong class="term-title">Tell me about it!</strong> I've spent all morning trying to fix a simple error."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> "O trânsito hoje está insuportável." - "<strong class="term-title">Nem me fale!</strong> Cheguei atrasado por causa disso." ("The traffic today is unbearable." - "<strong class="term-title">Tell me about it!</strong> I was late because of it.")</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This informal idiom is used to show empathy and agreement with someone's complaint, indicating that you have experienced the same frustration. It's a common way to build rapport in casual conversations. This is a very natural and common English response to shared frustration, and using it will make your English sound much more fluent and empathetic.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Tell Me About It <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'tell me about it' in an appropriate (e.g., informal) sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Sick and Tired -->
+        <div id="sick-and-tired-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Sick and Tired</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="sick and tired"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Idiom (Expressão Idiomática)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Annoyed or bored with something and unwilling to tolerate it any longer.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [De saco cheio; Cansado e farto; Não aguento mais]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context - Informal):</strong> Expressing extreme frustration with a recurring problem.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "I'm <strong class="term-title">sick and tired</strong> of these constant system outages; we need a permanent solution."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma conversa informal: "Estou <strong class="term-title">de saco cheio</strong> de refazer o mesmo relatório toda semana." (I'm <strong class="term-title">sick and tired</strong> of redoing the same report every week.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This informal idiom expresses strong annoyance, frustration, or exasperation with a recurring or persistent problem. It implies a desire for the situation to change immediately. Use with caution in formal settings. This is a powerful expression of frustration, much stronger than simply "I'm tired," and is very common in informal English conversations.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Sick and Tired <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'sick and tired' in an appropriate (e.g., informal) sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Picky -->
+        <div id="picky-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Picky</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="picky"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Adjective (Adjetivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Fussy and hard to please; excessively careful or fastidious.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Exigente; Chato; Seletivo]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context - Informal):</strong> Describing a client or colleague who is difficult to satisfy.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The client is very <strong class="term-title">picky</strong> about the design details, so we need to be extra precise."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma conversa informal: "Nosso novo chefe é um pouco <strong class="term-title">exigente</strong> com os relatórios." (Our new boss is a bit <strong class="term-title">picky</strong> about reports.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Picky" is an informal adjective used to describe someone who is very particular and hard to satisfy. While generally informal, it can be used in casual professional conversations to describe challenging stakeholders or tasks requiring high precision. It's a more nuanced way to describe someone's demanding nature than simply "difficult."</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Picky <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'picky' in an appropriate (e.g., informal) sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Term: Reckless -->
+        <div id="reckless-term" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Term: Reckless</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="reckless"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Adjective (Adjetivo)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> Heedless of danger or the consequences of one's actions; rash or impetuous.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Imprudente; Irresponsável; Temerário]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Describing a decision or action that was taken without proper consideration of risks.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "The decision to launch without proper security testing was incredibly <strong class="term-title">reckless</strong> and led to a major data breach."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de falha: "A abordagem <strong class="term-title">imprudente</strong> na gestão de projetos causou grandes perdas." (The <strong class="term-title">reckless</strong> approach to project management caused significant losses.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> "Reckless" is used to describe actions or decisions made without sufficient consideration for potential negative consequences, often implying irresponsibility or a disregard for risk. It's a strong adjective to highlight dangerous behavior. This term is important for risk management discussions, emphasizing the severity of irresponsible actions.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Word: Reckless <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'reckless' in an appropriate (e.g., informal) sentence."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Synonyms for Problem Table -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12" id="synonyms-table">Synonyms for Problem: Nuances and Usage 📚</h2>
+        <p class="text-light-text mb-8">
+            While "problem" is a versatile term, English offers many synonyms that can convey more specific nuances. Understanding these can help you choose the most precise word for your professional communication.
+        </p>
+
+        <div class="overflow-x-auto mb-12">
+            <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+                <thead>
+                    <tr class="bg-blue-100 text-blue-700 uppercase text-sm leading-normal">
+                        <th class="py-3 px-6 text-left">Term</th>
+                        <th class="py-3 px-6 text-left">Implication</th>
+                        <th class="py-3 px-6 text-left">Formality</th>
+                        <th class="py-3 px-6 text-left">Focus</th>
+                        <th class="py-3 px-6 text-left">Example (Work Context)</th>
+                        <th class="py-3 px-6 text-left">Example (Brazil Context)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700 text-sm font-light">
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Problem</td>
+                        <td class="py-3 px-6 text-left">A matter or situation regarded as unwelcome or harmful and needing to be dealt with.</td>
+                        <td class="py-3 px-6 text-left">Neutral to direct</td>
+                        <td class="py-3 px-6 text-left">A clear obstacle or defect needing correction.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"We have a serious <strong class="term-title">problem</strong> with the server's uptime."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"Estamos com um <strong class="term-title">problema</strong> de comunicação interna." (We have an internal communication <strong class="term-title">problem</strong>.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Issue</td>
+                        <td class="py-3 px-6 text-left">A point of discussion, concern, or a specific topic that needs to be addressed. Can be less severe than a problem.</td>
+                        <td class="py-3 px-6 text-left">Slightly softer/neutral</td>
+                        <td class="py-3 px-6 text-left">A specific point of concern or a topic to be discussed.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"There's an <strong class="term-title">issue</strong> regarding the budget allocation for Q3."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"Surgiu uma <strong class="term-title">questão</strong> sobre a qualidade do novo fornecedor." (An <strong class="term-title">issue</strong> arose concerning the quality of the new supplier.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Hurdle</td>
+                        <td class="py-3 px-6 text-left">An obstacle or difficulty. Often implies something that needs to be overcome to achieve a goal.</td>
+                        <td class="py-3 px-6 text-left">Neutral</td>
+                        <td class="py-3 px-6 text-left">A specific barrier that must be cleared to progress.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"Securing the necessary permits was a significant <strong class="term-title">hurdle</strong> for the construction project."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"A burocracia é um grande <strong class="term-title">obstáculo</strong> para a inovação." (Bureaucracy is a big <strong class="term-title">hurdle</strong> for innovation.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Obstacle</td>
+                        <td class="py-3 px-6 text-left">A thing that blocks one's way or prevents or hinders progress. More physical or tangible than a "hurdle."</td>
+                        <td class="py-3 px-6 text-left">Neutral</td>
+                        <td class="py-3 px-6 text-left">Something that physically or conceptually stands in the way of progress.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"Lack of funding proved to be the main <strong class="term-title">obstacle</strong> to completing the research."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"Enfrentamos um <strong class="term-title">impedimento</strong> inesperado na fase de testes." (We faced an unexpected <strong class="term-title">obstacle</strong> in the testing phase.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Challenge</td>
+                        <td class="py-3 px-6 text-left">A task or situation that tests someone's abilities. Often implies a positive opportunity for growth despite difficulty.</td>
+                        <td class="py-3 px-6 text-left">Positive/Neutral</td>
+                        <td class="py-3 px-6 text-left">An opportunity to demonstrate skill or overcome difficulty.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"Integrating the new system is a significant <strong class="term-title">challenge</strong>, but we're ready for it."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"O prazo apertado é um <strong class="term-title">desafio</strong>, mas vamos conseguir." (The tight deadline is a <strong class="term-title">challenge</strong>, but we will manage.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Difficulty</td>
+                        <td class="py-3 px-6 text-left">The state or condition of being difficult; a problem or obstacle.</td>
+                        <td class="py-3 px-6 text-left">Neutral</td>
+                        <td class="py-3 px-6 text-left">A general term for something requiring effort or skill.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"We encountered some unexpected <strong class="term-title">difficulties</strong> during the software integration."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"Tivemos algumas <strong class="term-title">dificuldades</strong> técnicas no projeto." (We had some technical <strong class="term-title">difficulties</strong> in the project.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Setback</td>
+                        <td class="py-3 px-6 text-left">A reversal or delay in progress; a temporary defeat.</td>
+                        <td class="py-3 px-6 text-left">Neutral</td>
+                        <td class="py-3 px-6 text-left">A temporary halt or reversal in progress.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"The unexpected hardware failure caused a significant <strong class="term-title">setback</strong> to our development schedule."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"Tivemos um <strong class="term-title">contratempo</strong> na entrega dos materiais, mas já estamos resolvendo." (We had a <strong class="term-title">setback</strong> in the material delivery, but we are already resolving it.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Roadblock</td>
+                        <td class="py-3 px-6 text-left">A barrier or obstacle that prevents progress.</td>
+                        <td class="py-3 px-6 text-left">Neutral to strong</td>
+                        <td class="py-3 px-6 text-left">Something that significantly halts or impedes progress.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"Lack of executive approval has become a significant <strong class="term-title">roadblock</strong>."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"A burocracia é um <strong class="term-title">bloqueio</strong> comum em projetos." (Bureaucracy is a common <strong class="term-title">roadblock</strong> in projects.)</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap font-semibold term-title">Dire Situation</td>
+                        <td class="py-3 px-6 text-left">An extremely serious or urgent situation.</td>
+                        <td class="py-3 px-6 text-left">Strong/Formal</td>
+                        <td class="py-3 px-6 text-left">A critical state requiring immediate action.</td>
+                        <td class="py-3 px-6 text-left text-primary-blue">"If we don't secure funding, the company will be in a <strong class="term-title">dire situation</strong>."</td>
+                        <td class="py-3 px-6 text-left portuguese-text">"A queda nas vendas nos colocou em uma <strong class="term-title">situação terrível</strong>." (The sales drop put us in a <strong class="term-title">dire situation</strong>.)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Common Collocations Section -->
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-primary-blue pb-2 mt-12">Common Collocations: Phrases for Precision 🧩</h2>
+        <p class="text-light-text mb-8">
+            Collocations are words that often go together. Using them correctly makes your English sound more natural and professional. This section focuses on common collocations related to problems and solutions.
+        </p>
+
+        <!-- Collocation Term: Address a Problem/Issue -->
+        <div id="address-problem-collocation" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Collocation: Address a Problem/Issue</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="address a problem"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb Phrase (Expressão Verbal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To deal with or tackle a problem or issue directly and effectively.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Abordar um problema/questão; Lidar com um problema/questão]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A manager initiates action to resolve a recurring customer complaint.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "We need to immediately <strong class="term-title">address the problem</strong> of declining customer satisfaction."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de equipe: "É crucial <strong class="term-title">abordar a questão</strong> da baixa produtividade antes que piore." (It's crucial to <strong class="term-title">address the issue</strong> of low productivity before it gets worse.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This is a highly professional and common collocation. It implies taking action to resolve something. Brazilians sometimes use "resolver um problema" directly, but "address a problem" is more about initiating the process of dealing with it, which can include analysis, discussion, and then resolution.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Collocation: Address a Problem/Issue <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'address a problem' or 'address an issue' in a sentence related to work."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collocation Term: Face a Challenge -->
+        <div id="face-challenge-collocation" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Collocation: Face a Challenge</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="face a challenge"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb Phrase (Expressão Verbal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To confront or be confronted with a difficult task or situation.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Enfrentar um desafio; Lidar com um desafio]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team is preparing for a difficult project or market condition.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our sales team is ready to <strong class="term-title">face the challenge</strong> of entering a new, competitive market."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em um planejamento estratégico: "Precisamos nos preparar para <strong class="term-title">enfrentar o desafio</strong> da transformação digital." (We need to prepare to <strong class="term-title">face the challenge</strong> of digital transformation.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This collocation emphasizes the act of confronting a difficulty. It's more active than simply "having a challenge." It's a positive and proactive way to talk about difficulties, implying resilience and determination. Brazilians often use "enfrentar um desafio," which translates directly and well to "face a challenge."</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Collocation: Face a Challenge <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'face a challenge' in a sentence related to work."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collocation Term: Find a Solution -->
+        <div id="find-solution-collocation" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Collocation: Find a Solution</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="find a solution"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Verb Phrase (Expressão Verbal)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> To discover or devise a way to resolve a problem or difficulty.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Encontrar uma solução; Achar uma solução]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> A team is brainstorming ways to fix a software bug.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our top priority is to <strong class="term-title">find a solution</strong> to the recurring network outages."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma reunião de inovação: "Precisamos <strong class="term-title">encontrar uma solução</strong> criativa para otimizar nossos processos." (We need to <strong class="term-title">find a creative solution</strong> to optimize our processes.)</li>
+                </ul>
+                <p class="text-light-text mt-4"><i class="fas fa-lightbulb usage-tip-icon mr-2"></i><strong class="usage-tip-icon">Usage Tip:</strong> This is a fundamental collocation in problem-solving discussions. It's direct and universally understood. While "resolver um problema" is common in Portuguese, "find a solution" emphasizes the process of discovering or creating the answer, rather than just the act of fixing. Avoid using "make a solution"; "find" or "develop" are more appropriate verbs.</p>
+                <div class="mt-6 border-t pt-4">
+                    <h4 class="text-lg font-semibold text-secondary-blue mb-3">Practice Your Collocation: Find a Solution <span class="ml-2">✍️</span></h4>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out practice-button">Type Your Sentence</button>
+                    <div class="practice-area mt-4 hidden">
+                        <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Use 'find a solution' in a sentence related to work."></textarea>
+                        <button class="submit-sentence-button mt-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">Submit</button>
+                        <div class="feedback-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collocation Term: Root Cause -->
+        <div id="root-cause-collocation" class="mb-8 p-4 bg-gray-50 rounded-lg shadow-sm">
+            <button class="w-full text-left py-3 px-4 bg-blue-100 hover:bg-blue-200 rounded-lg flex justify-between items-center focus:outline-none term-toggle">
+                <span class="text-xl font-semibold term-title">Collocation: Root Cause</span>
+                <i class="fas fa-volume-up pronunciation-icon" data-term="root cause"></i>
+                <i class="fas fa-chevron-down text-blue-700 toggle-icon"></i>
+            </button>
+            <div class="collapsible-content">
+                <p class="text-light-text mt-4"><strong class="term-title">Word Class:</strong> Noun Phrase (Expressão Substantiva)</p>
+                <p class="text-light-text mt-2"><strong class="term-title">Definition & Equivalents:</strong> The fundamental, underlying reason for a problem or phenomenon.</p>
+                <p class="portuguese-text mt-2"><strong>Português:</strong> [Causa raiz; Origem do problema]</p>
+                <p class="text-light-text mt-4"><strong class="term-title">Real-World Scenario (Work Context):</strong> Investigating why a process is consistently failing.</p>
+                <ul class="list-disc list-inside ml-4 mt-2 text-gray-800">
+                    <li><strong class="text-primary-blue">Example 1:</strong> "Our investigation aims to identify the <strong class="term-title">root cause</strong> of the production delays."</li>
+                    <li><strong class="text-primary-blue">Example 2 (Brazil Context):</strong> Em uma análise de falhas: "Precisamos ir a fundo para descobrir a <strong class="t
